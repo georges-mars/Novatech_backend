@@ -113,6 +113,8 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://frontend-pato.vercel.app/",
+
 ]
 # For production (specific domain)
 ALLOWED_HOSTS = ['novatech-backend-9kqw.onrender.com',
