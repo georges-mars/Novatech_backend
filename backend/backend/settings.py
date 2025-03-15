@@ -29,6 +29,10 @@ SECRET_KEY = 'django-insecure-1&a99w(-mh%aq^&l_lmcv%+oiuceu71phh_vr1h!f+r33d8ym9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CSRF_COOKIE_SECURE = True    # Send CSRF cookie over HTTPS only
+SESSION_COOKIE_SECURE = True # Send session cookie over HTTPS only
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Use Render's PORT environment variable (default to 8000 locally)
 PORT = int(os.environ.get("PORT", 8000))
@@ -114,13 +118,17 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "https://frontend-pato.vercel.app",#link with front end
+    'novatech-backend-9kqw.onrender.com',
 
 ]
 # For production (specific domain)
 ALLOWED_HOSTS = ['novatech-backend-9kqw.onrender.com',
                  '.onrender.com']
 
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://novatech-backend-9kqw.onrender.com',
+    # Add other domains if needed (e.g., custom domains)
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
