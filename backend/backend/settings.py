@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+# settings.py
+import os
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,8 +29,9 @@ SECRET_KEY = 'django-insecure-1&a99w(-mh%aq^&l_lmcv%+oiuceu71phh_vr1h!f+r33d8ym9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
+# Use Render's PORT environment variable (default to 8000 locally)
+PORT = int(os.environ.get("PORT", 8000))
 
 # Application definition
 
