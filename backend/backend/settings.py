@@ -109,6 +109,11 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
+# For production (specific domain)
+ALLOWED_HOSTS = ['novatech-backend-9kqw.onrender.com',
+                 '.onrender.com']
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
