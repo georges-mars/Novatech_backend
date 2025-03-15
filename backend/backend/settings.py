@@ -84,10 +84,10 @@ DATABASES = {
       #  'NAME': BASE_DIR / 'db.sqlite3',
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'algoverse',
-        'USER': 'root',  # Or 'root' if you skipped user creation
+        'NAME': 'novatech',
+        'USER': 'admin',  # Or 'root' if you skipped user creation
         'PASSWORD': 'NovatechC.T.O',
-        'HOST': 'localhost',
+        'HOST': 'novatech.cluster-cveuywuuiya7.eu-north-1.rds.amazonaws.com',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
