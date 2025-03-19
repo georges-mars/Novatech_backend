@@ -119,6 +119,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "https://frontend-pato.vercel.app",#link with front end
     "https://novatech-backend-9kqw.onrender.com",
+    "https://nova-tech-peach.vercel.app/",
 
 ]
 # For production (specific domain)
