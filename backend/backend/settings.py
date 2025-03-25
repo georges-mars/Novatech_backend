@@ -122,6 +122,9 @@ CORS_ALLOWED_ORIGINS = [
     "https://nova-tech-peach.vercel.app",
     "https://nova-tech-georges-mars-projects.vercel.app",
     "https://nova-tech-git-main-georges-mars-projects.vercel.app",
+    "https://nova-tech-solutions-africa-461e-melau-eddys-projects.vercel.app",
+    "https://nova-tech-solutions-africa-461e-git-main-melau-eddys-projects.vercel.app",
+    "https://nova-tech-solutions-africa-461e.vercel.app",
     
 
 ]
